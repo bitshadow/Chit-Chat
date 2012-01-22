@@ -1,1 +1,21 @@
-this is a test.
+PROJECT DEFINITION : Server-multiple client chat model
+      Server allowes multiple client to connect and let the clients chat themselves.
+
+List of programs : 
+1> mserver.c
+      Describes the server side of the model which handles multiple clients, 
+      detects input nick errors and sends message to the relevant client described 
+      by the sender and also displays the list of clients every time a new client 
+      enters the server.
+
+2> client.c
+      Describes the client side of the model and sends messages to a specified user.
+
+programms compilation:
+      1.mserver.c
+        gcc -lpthread -o mserver mserver.c
+
+      2.client.c
+        gcc -lpthread -o client client.c  
+
+
